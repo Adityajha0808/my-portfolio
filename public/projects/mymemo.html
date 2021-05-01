@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Memo - Projects</title>
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200italic,…lic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" media="all">
+        <!-- Bootstrap CSS Link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <!-- CSS Stylesheet -->
+        <link rel="stylesheet" href="..\css\styles.css">
+        <!-- Favicon -->
+        <link rel="icon" href="../images\favicon.ico">
+        <!-- Font awesome javascript --> 
+        <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+        <!-- Javascript for bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    </head>
+    <body>
+       <!-- Nav Bar -->
+       <nav class="navbar navbar-expand-lg navbar-clr">
+         
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+         <div>
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                   <a class="nav-link" href="../home.html">
+                       Home
+                   </a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="../about.html">
+                       About
+                   </a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="../skills.html">
+                       Skills
+                   </a>
+               </li>
+               <li class="nav-item">
+                   <a id="navlink-color" class="nav-link" href="../projects.html">
+                       Projects
+                   </a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="../blogs.html">
+                       Blogs
+                   </a>
+               </li>
+            </ul>
+            <div class="nav-item nav-contact">
+                <a class="nav-link" href="../contact.html">
+                    Contact
+               </a>
+            </div>
+         </div>
+       </nav>
+
+       <div class="building-parent building-mymemo building-page">
+         <h4 class="title-link">
+            <a href="../projects.html" class="link project-back-link"><i class="fas fa-chevron-left"></i>&nbsp;View all projects</a>
+         </h4>
+         <div class="flex-blocks-parent ethos-blocks-parent">
+            <div class="flex-block building-block-paragraph" style="padding-right: 100px;">
+               <div class="building-text">
+                    <h3 class="project-name project-desc-title">My Memo&nbsp;<a href="https://rmopl.csb.app/" target="_blank"><i class="fas fa-link" style="font-size: 20px;"></i></a></h3>
+                    <h3 class="title subtitle" style="padding-top: 10px;">A To-do list App created using React library</h3>
+                    <p class="paragraph content-paragraph">
+                        Built using useState() hook of React; Passing props through components, handling events and rendering elements.
+                    </p>
+                    <p class="paragraph content-paragraph">
+                        A task with a title is typed into the input field and submitted. Once submitted the note will appear as an entry.
+                        We can keep adding items to add additional entries in card format and have them all show up. Apart from entry addition,
+                        their is also a deletion icon in the note which removes the specific task and lists rest of the tasks accordingly.
+                    </p>
+                    <p class="paragraph content-paragraph">
+                        The parent component is App, which stores the notes array in its own state, managed using the useState() Hook.
+                        Inside App component, we create a list of those components, which will be passed by Note component from the notes
+                        prop using createArea component. The createArea component contains handleChange function which tracks the data from
+                        the user end and passes it to App.
+                    </p>
+                    <p class="paragraph content-paragraph">
+                        The createArea component iterates using map() function and renders a list of notes.
+                    </p>
+               </div>
+            </div>
+            <div class="project-carousel flex-block building-block w-inline-block w-clearfix" style="margin-left: 0; margin-right: 0;">
+              <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="../images/mymemo-1.PNG" class="d-block w-100" alt="mymemo-1">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="../images/mymemo-2.PNG" class="d-block w-100" alt="mymemo-2">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="../images/mymemo-3.PNG" class="d-block w-100" alt="mymemo-3">
+                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+       </div>
+
+       <div class="project-links">
+        <ul>
+          <li class="project-link-group">
+            <a target="_blank" href="https://rmopl.csb.app/"><i class="fas fa-globe project-code-link"></i>
+              <p class="paragraph content-paragraph" style="margin-top: 0;">Visit Website</p>
+            </a>
+          </li>
+          <li class="project-link-group">
+            <a target="_blank" href="https://github.com/Adityajha0808/my-memo"><i class="fas fa-file-code project-code-link"></i>
+              <p class="paragraph content-paragraph" style="margin-top: 0;">Watch Codebase</p>
+            </a>
+          </li>
+        </ul>
+       </div>
+
+       <div class="portfolio-navigation">
+           <h2 class="portfolio-navigation-link">
+               <a href="../projects/github-id-search.html" class="link">
+                 <i class="fas fa-chevron-left"></i>
+                  &nbsp;View previous project
+               </a>
+           </h2>
+           <h2 class="portfolio-navigation-link">
+               <a href="../projects/labyrinth.html" class="link">View next project&nbsp;
+                 <i class="fas fa-chevron-right"></i>
+               </a>
+           </h2>
+       </div>
+
+       <footer id="footer">
+         <a target="_blank" href="https://www.linkedin.com/in/aditya-nath-jha-0b47421b5/"><i class="fab fa-linkedin-in fa-2x"></i></a>
+         <a target="_blank" href="https://twitter.com/Zoran2308"><i class="fab fa-twitter fa-2x"></i></a>
+         <a target="_blank" href="https://www.facebook.com/people/Aditya-Kumar-Jha/100007156308607/"><i class="fab fa-facebook-f fa-2x"></i></a>
+         <a target="_blank" href="https://www.hackerrank.com/jhaaditya757"><i class="fab fa-hackerrank fa-2x"></i></a>
+         <a target="_blank" href="https://github.com/Adityajha0808"><i class="fab fa-github fa-2x"></i></a>
+         <p class="footer-p">&copy; Aditya Nath Jha - 
+            <span class="current-year">Year</span>
+         </p>
+       </footer>
+
+       <script src="../js/index.js" charset="utf-8"></script>
+    </body>
+</html>
