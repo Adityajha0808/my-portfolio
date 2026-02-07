@@ -3,7 +3,7 @@ const nodemailer = require("nodemailer");
 
 const app = express();
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 6060;
 
 // Middleware
 app.use(express.static('public'));
@@ -19,14 +19,14 @@ app.post('/', (req, res) => {
     const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: 'jhaaditya757@gmail.com',
-                pass: 'xxxxGmailPasswordxxxxx'
+                user: process.env.email,
+                pass: process.env.password
             }
           });
 
     const mailOptions = {
         from: req.body.email,
-        to: 'jhaaditya757@gmail.com',
+        to: process.env.email,
         subject: "Message from " +  req.body.name,
         text: req.body.message
     }
